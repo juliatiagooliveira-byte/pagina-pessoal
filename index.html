@@ -1,65 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minha Página Pessoal</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #241638, #382052);
+    color: white;
+}
 
-<!--Menu do site-->
-<header class="cabecalho">
-    <h1>Minha Página</h1>
+.cabecalho {
+    background-color: #8E6CCF;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
 
-    <nav>
-        <a href="inicio.html">Início</a>
-        <a href="sobre.html">Sobre mim</a>
-        <a href="contato.html">contato</a>
-        <a href="jogo.html">jogo</a>
-    </nav>
-</header>
+.menu {
+    background-color: #7652B5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px;
+}
 
-<!--Parte inicial da página-->
-<section class="inicio" id="inicio">
-    <img src="foto1.jpeg" alt="Foto de passeio de moto">
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-    <div class="inicio-texto">
-        <h2>Bem-vindos à minha página!</h2>
-        <p>
-            Aqui vou compartilhar um pouco sobre mim,
-            minha família, meus amigos e momentos especiais.
-        </p>
-    </div>
-</section>
+.menu a:hover {
+    color: #C8A8FF;
+}
 
-<!--Sobre mim-->
-<section class="sobre" id="sobre">
-    <h2>Sobre mim</h2>
-    <p>
-        Essa é minha página pessoal, onde compartilho
-        fotos e lembranças de momentos importantes.
-    </p>
-</section>
+section {
+    min-height: 300px;
+    padding: 70px 15%;
+    text-align: center;
+}
 
-<!--Fotos da família-->
-<section class="fotos" id="familia">
-    <h2>Minha família</h2>
+section h2 {
+    color: #C8A8FF;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
 
-    <div class="galeria">
-        <img src="foto2.jpeg" alt="Momento em família">
-    </div>
-</section>
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
 
-<!--Fotos com amigas-->
-<section class="fotos" id="amigos">
-    <h2>Meus amigos</h2>
-
-    <div class="galeria">
-        <img src="foto3.jpeg" alt="Foto com amigas">
-        <img src="foto4.jpeg" alt="Foto com amiga">
-    </div>
-</section>
-
-</body>
-</html>
+footer {
+    background-color: #8E6CCF;
+    padding: 25px;
+    text-align: center;
+}
