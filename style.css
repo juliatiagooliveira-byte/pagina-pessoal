@@ -53,3 +53,28 @@ nav a:hover {
         gap: 15px;
     }
 }
+.fotos {
+    padding: 30px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .galeria img {
+        width: 100%;
+        height: auto;
+    }
+}
